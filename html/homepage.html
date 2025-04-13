@@ -1,14 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Peduli Satwa</title>
     <link rel="stylesheet" href="../css/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, at eum porro quidem ullam illo soluta nihil laboriosam. Delectus pariatur blanditiis non commodi? Corrupti nulla nihil exercitationem, iusto laboriosam dolorum.</p>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <img src="../img/logo.png" alt="Logo Peduli Satwa" class="logo">
+            <ul class="menu">
+                <li><a href="#">DONASI</a></li>
+                <li><a href="#">GALANG DANA</a></li>
+                <li><a href="#">ARTIKEL</a></li>
+                <li><a href="#">TENTANG KAMI</a></li>
+            </ul>
+            <button class="login-button">
+                Signin/Login
+                <img src="../img/profile_icon.png" alt="Login Icon">
+            </button>
+        </div>
+    </nav>
+
+    <!-- Wrapper untuk konten utama -->
+    <div class="content-wrapper">
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="../img/hero_image.png" alt="Animal welfare" class="hero-image">
+            <div class="hero-overlay">
+                <h1 class="hero-text">Why Animal Welfare is Important</h1>
+            </div>
+            <div class="navigation-buttons">
+                <button class="nav-button">&#8249;</button>
+                <button class="nav-button">&#8250;</button>
+            </div>
+        </div>
+
+        <!-- Card Section -->
+        <h2 class="section-title">Berikan Kebaikanmu <a href="#" class="lainnya-button">Lainnya   ></a></h2>
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="../img/kucing1.png" alt="Banyak kucing" class="card-image">
+                <h3 class="card-title">20 Anak Kucing Butuh Makanan dab Obat Cacing</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <div class="donation-info">
+                    <span>Terkumpul: Rp 7.000.000</span>
+                    <span>70%</span>
+                </div>
+                <div class="card-info">
+                    <span>Penggalang: Komunitas Kucing</span>
+                    <span>12 hari lagi</span>
+                </div>
+                <a href="#" class="card-button">Donasi</a>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="../img/kucing2.png" alt="Animal clinic" class="card-image">
+                <h3 class="card-title">Bantu Biaya Operasi Luki, Anjing Patah, Kaki Korban Tabrak Lari</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 45%;"></div>
+                </div>
+                <div class="donation-info">
+                    <span>Terkumpul: Rp 4.500.000</span>
+                    <span>45%</span>
+                </div>
+                <div class="card-info">
+                    <span>Penggalang: Klinik Satwa</span>
+                    <span>20 hari lagi</span>
+                </div>
+                <a href="#" class="card-button">Donasi</a>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="../img/kucing3.png" alt="Korban banjir" class="card-image">
+                <h3 class="card-title">Evakuasi Hewan Peliharaan Korban Banjir Jawa Timur Membutuhkan Bantuan</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 25%;"></div>
+                </div>
+                <div class="donation-info">
+                    <span>Terkumpul: Rp 2.500.000</span>
+                    <span>25%</span>
+                </div>
+                <div class="card-info">
+                    <span>Penggalang: Tim Evakuasi</span>
+                    <span>5 hari lagi</span>
+                </div>
+                <a href="#" class="card-button">Donasi</a>
+            </div>
+        </div>
+
+        <!-- Banner Section -->
+        <div class="banner">
+            <div class="banner-image">
+                <img src="../img/kucing4.png" alt="Peduli satwa">
+            </div>
+            <div class="banner-content">
+                <h2 class="banner-title">Kumpulkan dana bagi mereka yang membutuhkan</h2>
+                <p class="banner-text">
+                    Dengan melakukan penggalangan dana, kamu dapat target tergalang mendapatkan biaya yang lebih besar. Donasi Anda tidak menutup kemungkinan dari target tertentu yang tak terbatas. Banyak kita lihat penggalangan dana yang tak terduga berhasil mencapai target-target besar sehingga dapat membantu banyak hewan yang membutuhkan, yuk, mulai galang dana sekarang dan jadi pelopor bagi yang terbaik bagi hal ini!
+                </p>
+                <a href="#" class="donasi-dana-button">Galang Dana</a>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <p class="copyright">© 2023 PEDULI SATWA</p>
+                <div class="language-selector">
+                    <a href="#" class="language">EN</a>
+                    <a href="#" class="language">ID</a>
+                </div>
+            </div>
+            <img src="../img/logo.png" alt="Brand Peduli Satwa" class="brand">
+            <div class="social-media">
+                <a href="#"><img src="../img/X_icon.png" alt="Twitter" class="social-icon"></a>
+                <a href="#"><img src="../img/ig_icon.png" alt="Instagram" class="social-icon"></a>
+                <a href="#"><img src="../img/tiktok_icon.png" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="../img/yt_icon.png" alt="TikTok" class="social-icon"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

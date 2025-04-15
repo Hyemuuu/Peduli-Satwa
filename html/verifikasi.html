@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peduli Satwa</title>
+  <link rel="stylesheet" href="../css/verifikasi.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="otp-container">
+    <h2>Verifikasi Kode OTP</h2>
+    <p>Ketik kode OTP yang telah dikirimkan pada nomor telepon anda</p>
+    <div class="otp-inputs">
+      <input type="text" maxlength="1" class="otp-input">
+      <input type="text" maxlength="1" class="otp-input">
+      <input type="text" maxlength="1" class="otp-input">
+      <input type="text" maxlength="1" class="otp-input">
+      <input type="text" maxlength="1" class="otp-input">
+      <input type="text" maxlength="1" class="otp-input">
+    </div>
+    <p class="timer">Kirim ulang kode OTP dalam 00:57</p>
+    <button id="verify-btn">Kirim</button>
+  </div>
+
+  <script>
+    // Pindah fokus otomatis
+    const inputs = document.querySelectorAll('.otp-inputs input');
+    const verifyButton = document.getElementById('verify-btn');
+
+    inputs.forEach((input, index) => {
+      input.addEventListener('input', () => {
+        if (input.value.length === 1 && index < inputs.length - 1) {
+          inputs[index + 1].focus();
+        }
+      });
+
+      input.addEventListener('keydown', (e) => {
+        if (e.key === "Backspace" && input.value === "" && index > 0) {
+          inputs[index - 1].focus();
+        }
+      });
+    });
+
+    // Cek semua input OTP terisi
+    verifyButton.addEventListener('click', () => {
+      const otpValues = Array.from(inputs).map(input => input.value);
+      if (otpValues.every(value => value.length === 1)) {
+        window.location.href = 'login.html'; // Redirect ke halaman ganti kata sandi
+      } else {
+        alert("Harap lengkapi semua kolom OTP");
+      }
+    });
+  </script>
+
+</body>
+</html>

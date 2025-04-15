@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peduli Satwa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/daftar.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo Peduli Satwa">
+      </div>
+    </div>
+    <div class="right">
+      <div class="form-box">
+        <h2 class="judul-daftar">
+            <a href="homepage.html" class="back-icon"><i class="fas fa-arrow-left"></i></a>
+            Daftar
+          </h2>
+        <form action="verifikasi.html" method="GET">
+          <label for="nama">Nama*</label>
+          <input type="text" id="nama" name="nama" required />
+
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Kata Sandi*</label>
+          <input type="password" id="password" name="password" required />
+
+          <label for="konfirmasi">Konfirmasi Kata Sandi*</label>
+          <input type="password" id="konfirmasi" name="konfirmasi" required />
+
+          <button type="submit">Daftar</button>
+          <p class="login-link">Sudah punya akun? <a href="masuk.html">Masuk</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

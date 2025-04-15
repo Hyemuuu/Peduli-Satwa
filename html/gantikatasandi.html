@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Peduli Satwa</title>
+  <title>Peduli Satwa - Daftar</title>
   <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../css/gantikatasandi.css" />
@@ -22,18 +22,20 @@
             Ganti Kata Sandi
           </h2>
         <form action="masuk.html" method="GET">
+            <label for="password">Kata Sandi baru*</label>
             <div class="input-wrapper">
                 <input type="password" id="password" name="password" required />
                 <span class="toggle-password" toggle="#password">
                   <i class="fas fa-eye-slash"></i>
                 </span>
               </div>
-              <div class="input-wrapper">
-                <input type="password" id="konfirmasi" name="konfirmasi" required />
-                <span class="toggle-password" toggle="#konfirmasi">
-                  <i class="fas fa-eye-slash"></i>
-                </span>
-              </div>
+            <label for="password">Konfirmasi Kata Sandi baru*</label>
+            <div class="input-wrapper">
+              <input type="password" id="konfirmasi" name="konfirmasi" required />
+              <span class="toggle-password" toggle="#konfirmasi">
+                <i class="fas fa-eye-slash"></i>
+              </span>
+            </div>
             
           <button type="submit">Ganti Kata Sandi</button>
         </form>

@@ -96,12 +96,14 @@
   .toggle-password {
     position: absolute;
     top: 50%;
-    right: 1rem;
     transform: translateY(-50%);
+    right: 1rem;
     cursor: pointer;
     color: #201F38;
     font-size: 1rem;
+    pointer-events: auto;
   }
+  
   
   /* Tombol */
   form button {

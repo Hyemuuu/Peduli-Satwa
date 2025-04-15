@@ -14,7 +14,7 @@
     height: 100vh;
   }
   
-  /* Kiri: background singa */
+  /* Kiri */
   .left {
     flex: 1;
     background: url('../img/singa.jpg') no-repeat center center/cover;
@@ -34,7 +34,7 @@
     max-width: 90%;
   }
   
-  /* Kanan: form */
+  /* Kanan */
   .right {
     flex: 1;
     background-color: #201F38;
@@ -75,9 +75,11 @@
     background-color: #ffffff;
   }
 
-  /* Tombol Daftar */
+  /* Tombol */
   form button {
-    width: 100%;
+    width: 50%;
+    display: block;
+    margin: 0 auto; 
     padding: 0.75rem;
     background-color: #201F38;
     color: #F7C317;

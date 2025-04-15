@@ -14,7 +14,7 @@
     height: 100vh;
   }
   
-  /* Bagian Kiri */
+  /* Kiri */
   .left {
     flex: 1;
     background: url('../img/singa.jpg') no-repeat center center/cover;
@@ -34,7 +34,7 @@
     max-width: 90%;
   }
   
-  /* Bagian Kanan */
+  /* Kanan */
   .right {
     flex: 1;
     background-color: #201F38;
@@ -51,65 +51,35 @@
     max-width: 350px;
   }
   
-  .judul-daftar {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    font-size: 1.5rem;
+  /* Label */
+  form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
     color: #201F38;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    font-weight: 600;
   }
   
-  .back-icon {
-    color: #201F38;
-    font-size: 1.2rem;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-  }
-  
-  .back-icon:hover {
-    transform: translateX(-3px);
-    color: #EAECEF;
-  }
-  
-  /* Input + Icon */
-  .input-wrapper {
-    position: relative;
+  /* Input */
+  form input {
     width: 100%;
+    padding: 0.75rem;
     margin-bottom: 1rem;
-  }
-  
-  .input-wrapper input {
-    width: 100%;
-    padding: 0.75rem 2.5rem 0.75rem 1rem; /* padding kanan buat icon */
     border: none;
     border-radius: 20px;
     font-size: 1rem;
   }
   
-  .input-wrapper input:focus {
+  form input:focus {
     outline: 2px solid #201F38;
     background-color: #ffffff;
   }
   
-  .toggle-password {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 1rem;
-    cursor: pointer;
-    color: #201F38;
-    font-size: 1rem;
-    pointer-events: auto;
-  }
-  
-  
   /* Tombol */
   form button {
-    width: 60%;
+    width: 50%;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;   
     padding: 0.75rem;
     background-color: #201F38;
     color: #F7C317;
@@ -125,4 +95,63 @@
     color: #201F38;
     transform: scale(1.03);
   }
+  
+  /* Link masuk */
+  .login-link {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #201F38;
+  }
+  
+  .login-link a {
+    color: #201F38;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .login-link a:hover {
+    transform: scale(1.05);
+  }
+  
+  .login-link a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #201F38;
+    transition: width 0.3s ease;
+  }
+  
+  .login-link a:hover::after {
+    width: 100%;
+  }
+  
+  .judul-daftar {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* jarak antara icon dan teks */
+  font-size: 1.5rem;
+  color: #201F38;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  }
+  
+  .back-icon {
+  color: #201F38;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  }
+  
+  .back-icon:hover {
+  transform: translateX(-3px);
+  color: #EAECEF;
+  }
+  
   

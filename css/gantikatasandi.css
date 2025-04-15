@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Bagian Kiri */
+  .left {
+    flex: 1;
+    background: url('../img/singa.jpg') no-repeat center center/cover;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .logo img {
+    width: 220px;
+    max-width: 90%;
+  }
+  
+  /* Bagian Kanan */
+  .right {
+    flex: 1;
+    background-color: #201F38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-box {
+    background-color: #F7C317;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  .judul-daftar {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    color: #201F38;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .back-icon {
+    color: #201F38;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .back-icon:hover {
+    transform: translateX(-3px);
+    color: #EAECEF;
+  }
+  
+  /* Input + Icon */
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .input-wrapper input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem; /* padding kanan buat icon */
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+  
+  .input-wrapper input:focus {
+    outline: 2px solid #201F38;
+    background-color: #ffffff;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #201F38;
+    font-size: 1rem;
+  }
+  
+  /* Tombol */
+  form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #201F38;
+    color: #F7C317;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #EAECEF;
+    color: #201F38;
+    transform: scale(1.03);
+  }
+  

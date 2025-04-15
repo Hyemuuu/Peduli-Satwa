@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peduli Satwa - Daftar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/gantikatasandi.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo Peduli Satwa">
+      </div>
+    </div>
+    <div class="right">
+      <div class="form-box">
+        <h2 class="judul-daftar">
+            <a href="homepage.html" class="back-icon"><i class="fas fa-arrow-left"></i></a>
+            Ganti Kata Sandi
+          </h2>
+        <form action="masuk.html" method="GET">
+            <div class="input-wrapper">
+                <input type="password" id="password" name="password" required />
+                <span class="toggle-password" toggle="#password">
+                  <i class="fas fa-eye-slash"></i>
+                </span>
+              </div>
+              <div class="input-wrapper">
+                <input type="password" id="konfirmasi" name="konfirmasi" required />
+                <span class="toggle-password" toggle="#konfirmasi">
+                  <i class="fas fa-eye-slash"></i>
+                </span>
+              </div>
+            
+          <button type="submit">Ganti Kata Sandi</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.toggle-password').forEach(function(wrapper) {
+      wrapper.addEventListener('click', function () {
+        const input = document.querySelector(this.getAttribute('toggle'));
+        const icon = this.querySelector('i');
+  
+        const isHidden = input.getAttribute('type') === 'password';
+  
+        // Toggle input type
+        input.setAttribute('type', isHidden ? 'text' : 'password');
+  
+        // Toggle ikon
+        icon.classList.toggle('fa-eye');
+        icon.classList.toggle('fa-eye-slash');
+      });
+    });
+  </script>  
+</body>
+</html>

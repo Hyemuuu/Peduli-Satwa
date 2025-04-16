@@ -47,7 +47,7 @@
     verifyButton.addEventListener('click', () => {
       const otpValues = Array.from(inputs).map(input => input.value);
       if (otpValues.every(value => value.length === 1)) {
-        window.location.href = 'login.html'; // Redirect ke halaman ganti kata sandi
+        window.location.href = 'masuk.html'; // Redirect ke halaman ganti kata sandi
       } else {
         alert("Harap lengkapi semua kolom OTP");
       }

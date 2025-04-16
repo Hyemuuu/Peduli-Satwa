@@ -52,12 +52,14 @@ body {
 .login-btn {
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .profile-icon {
   font-size: 1.2rem;
   margin-left: 0.5rem;
   vertical-align: middle;
+  cursor: pointer;
 }
 /* Content Wrapper */
 .content-wrapper {
